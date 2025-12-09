@@ -1,35 +1,67 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects and Portfolio – Carolina Romano</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  <style>
-    body { font-family: 'Open Sans', sans-serif; background-color: navy; color: lightgreen; }
-    #header { background-color: #000080; width: calc(250px - 3cm); }
-    #header header h1, #header header p, #header nav ul li a { color: lightgreen; }
-    #header nav ul li a.active { color: #00FF00; }
-    #main { margin-left: calc(250px - 3cm + 2rem); padding: 2rem; }
-    #footer p, #footer a { color: lightgreen; text-align: center; }
-    .social-icons a { color: lightgreen; margin: 0 0.5rem; font-size: 1.2rem; }
-    section { min-height: 100vh; scroll-snap-align: start; }
-    html { scroll-behavior: smooth; scroll-snap-type: y mandatory; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Open Sans', sans-serif;
+      background-color: navy;
+      color: lightgreen;
+      overflow-x: hidden;
+    }
+
+    a { color: lightgreen; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 100%;
+      background-color: #000080;
+      padding: 2rem 1rem;
+      box-sizing: border-box;
+    }
+
+    #sidebar h1 { margin-top:0; font-size:1.5rem; color: lightgreen; }
+    #sidebar p { font-size:0.9rem; color: lightgreen; margin-bottom:2rem; }
+    #sidebar nav ul { list-style:none; padding:0; }
+    #sidebar nav ul li { margin:1rem 0; }
+    #sidebar nav ul li a { color: lightgreen; font-size:0.95rem; }
+    #sidebar nav ul li a.active { color: #00FF00; font-weight:bold; }
+
+    #content {
+      margin-left: 240px;
+      padding: 2rem;
+      scroll-snap-type: y mandatory;
+      height: 100vh;
+      overflow-y: scroll;
+    }
+
+    section { height: 100vh; scroll-snap-align: start; padding-right:2rem; box-sizing:border-box; }
+    h2 { margin-top:0; }
+    ul { margin-left: 2rem; }
+
+    footer { text-align:center; margin-top:2rem; }
+    .social-icons a { margin: 0 0.5rem; font-size: 1.2rem; color: lightgreen; }
+
+  </style>
 </head>
+<body>
 
-<body class="is-preload">
-
-  <section id="header">
-    <header>
-      <span class="image avatar"><img src="images/avatar.jpg" alt="Carolina Romano" /></span>
-      <h1 id="logo">Carolina Romano</h1>
-      <p>A long story short – studies, work, volunteering and values</p>
-    </header>
-    <nav id="nav">
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <h1>Carolina Romano</h1>
+    <p>A long story short – studies, work, volunteering and values</p>
+    <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="#socialmedia">Social Media & Website audiovisual content</a></li>
@@ -40,81 +72,88 @@
         <li><a href="#other">Other</a></li>
       </ul>
     </nav>
-  </section>
+  </div>
 
-  <div id="wrapper">
-    <div id="main">
+  <!-- Main Content -->
+  <div id="content">
 
-      <section id="socialmedia">
-        <h2>Social Media & Website audiovisual content</h2>
-        <ul>
-          <li>Linkedin: <a href="[link]">sample for Startup Autobahn</a>, <a href="[link]">sample for IAPP</a></li>
-          <li>Instagram: <a href="[link]">sample for Startup Autobahn</a>, <a href="[link]">sample for IAPP</a></li>
-          <li>YouTube: <a href="[link]">Startup Autobahn’s EXPO2023 playlist</a> (content management, copy, visual)</li>
-          <li>Interview cycle <a href="[link]">link</a></li>
-          <li>Interview with volunteers/politicians regarding immigration in EU <a href="[link]">link</a></li>
-        </ul>
-      </section>
+    <section id="socialmedia">
+      <h2>Social Media & Website audiovisual content</h2>
+      <ul>
+        <li>Linkedin: <a href="[link]">sample for Startup Autobahn</a>, <a href="[link]">sample for IAPP</a></li>
+        <li>Instagram: <a href="[link]">sample for Startup Autobahn</a>, <a href="[link]">sample for IAPP</a></li>
+        <li>YouTube: <a href="[link]">Startup Autobahn’s EXPO2023 playlist</a> (content management, copy, visual)</li>
+        <li>Interview cycle <a href="[link]">link</a></li>
+        <li>Interview with volunteers/politicians regarding immigration in EU <a href="[link]">link</a></li>
+      </ul>
+    </section>
 
-      <section id="copywriting">
-        <h2>Copywriting / Advertising</h2>
-        <ul>
-          <li>Heroes for IAPP events Data Protection Intensive 2026 <a href="[link]">link</a> and AI Governance Global 2026 <a href="[link]">link</a> (Q1/Q2 2026)</li>
-          <li>Flyer on IAPP services in international perspective (Q1/Q2 2026)</li>
-          <li>Newsletter sample: <a href="[link]">link</a></li>
-        </ul>
-      </section>
+    <section id="copywriting">
+      <h2>Copywriting / Advertising</h2>
+      <ul>
+        <li>Heroes for IAPP events Data Protection Intensive 2026 <a href="[link]">link</a> and AI Governance Global 2026 <a href="[link]">link</a> (Q1/Q2 2026)</li>
+        <li>Flyer on IAPP services in international perspective (Q1/Q2 2026)</li>
+        <li>Newsletter sample: <a href="[link]">link</a></li>
+      </ul>
+    </section>
 
-      <section id="marketing">
-        <h2>Marketing Collateral</h2>
-        <ul>
-          <li>Stickers 2026 (to be published in Q1 2026, overview on previous ones here)</li>
-          <li>Infopackages sample <a href="[link]">link</a></li>
-        </ul>
-      </section>
+    <section id="marketing">
+      <h2>Marketing Collateral</h2>
+      <ul>
+        <li>Stickers 2026 (to be published in Q1 2026, overview on previous ones here)</li>
+        <li>Infopackages sample <a href="[link]">link</a></li>
+      </ul>
+    </section>
 
-      <section id="event">
-        <h2>Event & Project Management</h2>
-        <ul>
-          <li>Material selection for video production (segments, copy, relevant people and technologies) and general management with external provider <a href="[link]">sample</a></li>
-        </ul>
-      </section>
+    <section id="event">
+      <h2>Event & Project Management</h2>
+      <ul>
+        <li>Material selection for video production (segments, copy, relevant people and technologies) and general management with external provider <a href="[link]">sample</a></li>
+      </ul>
+    </section>
 
-      <section id="pr">
-        <h2>PR & Outreach</h2>
-        <ul>
-          <li>Support in EXPO2023 media and press kit production and press release <a href="[link]">link</a></li>
-        </ul>
-      </section>
+    <section id="pr">
+      <h2>PR & Outreach</h2>
+      <ul>
+        <li>Support in EXPO2023 media and press kit production and press release <a href="[link]">link</a></li>
+      </ul>
+    </section>
 
-      <section id="other">
-        <h2>Other</h2>
-        <ul>
-          <li>Presentation on Assistive Technologies (Q1 2026)</li>
-          <li>Website Management <a href="[link]">link</a></li>
-          <li>Event pictures <a href="[link]">link</a></li>
-        </ul>
-        <p>Looking for more? Ask about my personal experience in storytelling and stand-up comedy...</p>
-      </section>
+    <section id="other">
+      <h2>Other</h2>
+      <ul>
+        <li>Presentation on Assistive Technologies (Q1 2026)</li>
+        <li>Website Management <a href="[link]">link</a></li>
+        <li>Event pictures <a href="[link]">link</a></li>
+      </ul>
+      <p>Looking for more? Ask about my personal experience in storytelling and stand-up comedy...</p>
+    </section>
 
-    </div>
-
-    <section id="footer">
+    <footer>
       <p>&copy; 2025 Carolina Romano</p>
       <div class="social-icons">
         <a href="https://www.linkedin.com/in/carolina-romano20230/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="mailto:carolina01romano@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
-    </section>
+    </footer>
+
   </div>
 
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script>
+    // Highlight active sidebar link
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('#sidebar nav ul li a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => {
+        const sectionTop = sec.offsetTop;
+        if (pageYOffset >= sectionTop - 60) current = sec.getAttribute('id');
+      });
+      navLinks.forEach(link => link.classList.remove('active'));
+      document.querySelector('#sidebar nav ul li a[href*=' + current + ']').classList.add('active');
+    });
+  </script>
 
 </body>
 </html>
