@@ -1,164 +1,174 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!-- Customized for Carolina Romano -->
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carolina Romano</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
-    /* General Styles */
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Open Sans', sans-serif;
-      background-color: navy;
-      color: lightgreen;
-      overflow-x: hidden;
-    }
-
-    a { color: lightgreen; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* Layout */
-    #sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 220px; /* sidebar width */
-      height: 100%;
-      background-color: #000080;
-      padding: 2rem 1rem;
-      box-sizing: border-box;
-      text-align: center;
-    }
-
-    #sidebar img {
-      width: 150px;
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto 1rem auto;
-    }
-
-    #sidebar h1 { margin-top: 0; font-size:1.5rem; color: lightgreen; }
-    #sidebar p { font-size:0.9rem; color: lightgreen; margin-bottom:2rem; }
-
-    #sidebar nav ul { list-style:none; padding:0; text-align:left; }
-    #sidebar nav ul li { margin:1rem 0; }
-    #sidebar nav ul li a { color: lightgreen; font-size:0.95rem; }
-    #sidebar nav ul li a.active { color: #00FF00; font-weight:bold; }
-
-    #content {
-      margin-left: 240px; /* sidebar + spacing */
-      padding: 2rem;
-      scroll-snap-type: y mandatory;
-      height: 100vh;
-      overflow-y: scroll;
-    }
-
-    section { height: 100vh; scroll-snap-align: start; padding-right:2rem; box-sizing:border-box; }
-    h2 { margin-top:0; }
-    ul { margin-left: 2rem; }
-
-    /* Footer */
-    footer { text-align:center; margin-top:2rem; }
-    .social-icons a { margin: 0 0.5rem; font-size: 1.2rem; color: lightgreen; }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carolina Romano</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* Optional smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Ensure active link shows a white line */
+        #nav ul li a.active {
+            border-left: 4px solid white;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Sidebar -->
-  <div id="sidebar">
-    <img src="images/avatar.jpg" alt="Carolina Romano">
-    <h1>Carolina Romano</h1>
-    <p>A long story short – studies, work, volunteering and values</p>
-    <nav>
-      <ul>
-        <li><a href="#intro" class="active">The “talk me about yourself” question</a></li>
-        <li><a href="#studies">Studies</a></li>
-        <li><a href="#experience">First work experience</a></li>
-        <li><a href="#shift">The Shift</a></li>
-        <li><a href="#mission">Inclusive Neurotech</a></li>
-        <li><a href="#today">Today and Tomorrow</a></li>
-        <li><a href="#projects">Projects and Portfolio</a></li>
-      </ul>
-    </nav>
-  </div>
+    <!-- Sidebar Header -->
+    <section id="header">
+        <header>
+            <span class="image avatar"><img src="images/avatar.jpg" alt="Carolina Romano" /></span>
+            <h1 id="logo"><a href="index.html">Carolina Romano</a></h1>
+            <p>A long story short – studies, work,<br> volunteering and values</p>
+        </header>
 
-  <!-- Main Content -->
-  <div id="content">
-    <section id="intro">
-      <h2>The “talk me about yourself” question</h2>
-      <p>Where to start? What to highlight? Well, let me walk you through my academic, professional and volunteering story first – so that you can decide what to deepen after.</p>
-      <p>We always communicate something – it can be about any topic, anytime. In my case, I decided to communicate for a living, and here I am: writing and speaking about privacy, AI, data governance, neurotechnology and psychology through the lenses of culture and diversity. My goal is to contribute shaping the future of brain health technology in a more inclusive and culturally/socially relevant way.</p>
+        <nav id="nav">
+            <ul>
+                <li><a href="#intro" class="active">The “talk me about yourself” question</a></li>
+                <li><a href="#studies">Studies</a></li>
+                <li><a href="#experience">First work experience</a></li>
+                <li><a href="#shift">The Shift</a></li>
+                <li><a href="#mission">Inclusive Neurotech</a></li>
+                <li><a href="#today">Today and Tomorrow</a></li>
+                <li><a href="projects.html">Projects and Portfolio</a></li>
+            </ul>
+        </nav>
+
+        <footer>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/carolina-romano20230/" target="_blank" class="icon brands fa-linkedin"><span>LinkedIn</span></a></li>
+                <li><a href="mailto:carolina01romano@gmail.com" class="icon solid fa-envelope"><span>Email</span></a></li>
+            </ul>
+        </footer>
     </section>
 
-    <section id="studies">
-      <h2>Studies</h2>
-      <p>I studied foreign languages (apart from English and Italian, I speak German, Spanish and Portuguese; French is on the way!), and international communication across Italy, Germany and Norway. My focus was marketing – including PR and advertising – and how people from different languages, places and cultures understand them.</p>
-      <p>A new product that needs to be adapted to different European or international markets? No problem – I got an analysis and strategy ready for this.</p>
-    </section>
+    <!-- Main Wrapper -->
+    <div id="wrapper">
 
-    <section id="experience">
-      <h2>First work experience</h2>
-      <p>My first professional steps were rooted in digital communication and customer engagement. At fitvia in Wiesbaden, I gained hands-on experience in CRM, social media, communication and customer support – I could experience how targeted content and tailored interactions can shape user experiences across markets.</p>
-      <p>A few months after, a small jump to Stuttgart led me to STARTUP AUTOBAHN – time to work for a global, open innovation platform. There, I challenged myself in online/onsite event planning, communication strategy, PR, copywriting and community management, coordinating international startup–corporate collaborations.</p>
-    </section>
+        <!-- Main Content -->
+        <div id="main">
 
-    <section id="shift">
-      <h2>The Shift</h2>
-      <p>AI, emerging technologies and data governance – was this the direction I wanted to take? Indeed it was. With a one-way ticket to Brussels, I joined the International Association Privacy Professionals, where I expanded my expertise in digital content creation, creative marketing and copywriting, event and customer support.</p>
-    </section>
+            <!-- INTRO -->
+            <section id="intro">
+                <div class="container">
+                    <h2>The “talk me about yourself” question</h2>
+                    <p>Where to start? What to highlight? Well, let me walk you through my academic, professional and volunteering story first – so that you can decide what to deepen after.</p>
+                    <p>We always communicate something – it can be about any topic, anytime. In my case, I decided to communicate for a living, and here I am: writing and speaking about privacy, AI, data governance, neurotechnology and psychology through the lenses of culture and diversity. My goal is to contribute shaping the future of brain health technology in a more inclusive and culturally/socially relevant way.</p>
+                </div>
+            </section>
 
-    <section id="mission">
-      <h2>Inclusive Neurotech</h2>
-      <p>A piece of the puzzle was still missing. I was working in an interesting field, but the desire for impact and advocacy for which Brussels is known was still pushing me. I found a partial answer in some volunteering – which led me to more specialization.</p>
-      <p>In the past two years, I found brain health and neurotechnology to be my go-to. I combined courses on neuroscience, digital health data management and mental conditions with volunteering in the assistive technologies field and neurodiversity – eureka! That was my call: how can neurotechnologies, digital tools and AI support mental well being respecting ethics, autonomy and cognitive liberty?</p>
-    </section>
+            <!-- STUDIES -->
+            <section id="studies">
+                <div class="container">
+                    <h2>Studies</h2>
+                    <p>I studied foreign languages (apart from English and Italian, I speak German, Spanish and Portuguese; French is on the way!), and international communication across Italy, Germany and Norway. My focus was marketing – including PR and advertising – and how people from different languages, places and cultures understand them.</p>
+                    <p>A new product that needs to be adapted to different European or international markets? No problem – I got an analysis and strategy ready for this.</p>
+                </div>
+            </section>
 
-    <section id="today">
-      <h2>Today and Tomorrow</h2>
-      <p>Today, I am building a career at the intersection of:</p>
-      <ul>
-        <li>Marketing and communication</li>
-        <li>Privacy, AI governance and data management</li>
-        <li>Brain health, neuroscience and psychology</li>
-      </ul>
-      <p>For my career, I wish to grow into international project management, to lead impactful marketing and communication projects in the field of brain health technologies, combining creativity with ethical governance and scientific insight.</p>
-    </section>
+            <!-- EXPERIENCE -->
+            <section id="experience">
+                <div class="container">
+                    <h2>First work experience</h2>
+                    <p>My first professional steps were rooted in digital communication and customer engagement. At fitvia in Wiesbaden, I gained hands-on experience in CRM, social media, communication and customer support – I could experience how targeted content and tailored interactions can shape user experiences across markets.</p>
+                    <p>A few months after, a small jump to Stuttgart led me to STARTUP AUTOBAHN – time to work for a global, open innovation platform. There, I challenged myself in online/onsite event planning, communication strategy, PR, copywriting and community management, coordinating international startup–corporate collaborations.</p>
+                </div>
+            </section>
 
-    <section id="projects">
-      <h2>Projects and Portfolio</h2>
-      <p>I got you – visit the other section of the website: <a href="projects.html">Projects and Portfolio</a>.</p>
-    </section>
+            <!-- THE SHIFT -->
+            <section id="shift">
+                <div class="container">
+                    <h2>The Shift</h2>
+                    <p>AI, emerging technologies and data governance – was this the direction I wanted to take? Indeed it was. With a one-way ticket to Brussels, I joined the International Association Privacy Professionals, where I expanded my expertise in digital content creation, creative marketing and copywriting, event and customer support.</p>
+                </div>
+            </section>
 
-    <footer>
-      <p>&copy; 2025 Carolina Romano</p>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/carolina-romano20230/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:carolina01romano@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-    </footer>
-  </div>
+            <!-- INCLUSIVE NEUROTECH -->
+            <section id="mission">
+                <div class="container">
+                    <h2>Inclusive Neurotech</h2>
+                    <p>A piece of the puzzle was still missing. I was working in an interesting field, but the desire for impact and advocacy for which Brussels is known was still pushing me. I found a partial answer in some volunteering – which led me to more specialization.</p>
+                    <p>In the past two years, I found brain health and neurotechnology to be my go-to. I combined courses on neuroscience, digital health data management and mental conditions with volunteering in the assistive technologies field and neurodiversity – eureka! That was my call: how can neurotechnologies, digital tools and AI support mental well being respecting ethics, autonomy and cognitive liberty?</p>
+                </div>
+            </section>
 
-  <script>
-    // Highlight active sidebar link
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('#sidebar nav ul li a');
+            <!-- TODAY & TOMORROW -->
+            <section id="today">
+                <div class="container">
+                    <h2>Today and Tomorrow</h2>
+                    <p>Today, I am building a career at the intersection of:</p>
+                    <ul>
+                        <li>Marketing and communication</li>
+                        <li>Privacy, AI governance and data management</li>
+                        <li>Brain health, neuroscience and psychology</li>
+                    </ul>
+                    <p>For my career, I wish to grow into international project management, to lead impactful marketing and communication projects in the field of brain health technologies, combining creativity with ethical governance and scientific insight.</p>
+                </div>
+            </section>
 
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(sec => {
-        const sectionTop = sec.offsetTop;
-        if (pageYOffset >= sectionTop - 60) current = sec.getAttribute('id');
-      });
-      navLinks.forEach(link => link.classList.remove('active'));
-      document.querySelector('#sidebar nav ul li a[href*=' + current + ']').classList.add('active');
-    });
-  </script>
+            <!-- PROJECTS LINK -->
+            <section id="projects">
+                <div class="container">
+                    <h2>Projects and Portfolio</h2>
+                    <p>I got you – visit the other section of the website.</p>
+                    <p><a href="projects.html" class="button primary">Go to Projects & Portfolio</a></p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <ul class="copyright">
+                    <li>&copy; 2025 Carolina Romano</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollzer.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Sidebar active link handling
+        $(document).ready(function() {
+            var navLinks = $('#nav ul li a');
+
+            // Click updates active class
+            navLinks.on('click', function() {
+                navLinks.removeClass('active');
+                $(this).addClass('active');
+            });
+
+            // Scroll updates active class
+            $(window).on('scroll', function() {
+                var scrollPos = $(document).scrollTop();
+
+                $('#main section').each(function() {
+                    var top = $(this).offset().top - 100; // adjust for header
+                    var bottom = top + $(this).outerHeight();
+                    var id = $(this).attr('id');
+
+                    if (scrollPos >= top && scrollPos < bottom) {
+                        navLinks.removeClass('active');
+                        $('#nav ul li a[href="#' + id + '"]').addClass('active');
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
-
