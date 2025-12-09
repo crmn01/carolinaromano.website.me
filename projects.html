@@ -20,6 +20,7 @@
     a { color: lightgreen; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
+    /* Sidebar */
     #sidebar {
       position: fixed;
       top: 0;
@@ -29,11 +30,20 @@
       background-color: #000080;
       padding: 2rem 1rem;
       box-sizing: border-box;
+      text-align: center;
+    }
+
+    #sidebar img {
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 1rem auto;
     }
 
     #sidebar h1 { margin-top:0; font-size:1.5rem; color: lightgreen; }
     #sidebar p { font-size:0.9rem; color: lightgreen; margin-bottom:2rem; }
-    #sidebar nav ul { list-style:none; padding:0; }
+
+    #sidebar nav ul { list-style:none; padding:0; text-align:left; }
     #sidebar nav ul li { margin:1rem 0; }
     #sidebar nav ul li a { color: lightgreen; font-size:0.95rem; }
     #sidebar nav ul li a.active { color: #00FF00; font-weight:bold; }
@@ -59,6 +69,7 @@
 
   <!-- Sidebar -->
   <div id="sidebar">
+    <img src="images/avatar.jpg" alt="Carolina Romano">
     <h1>Carolina Romano</h1>
     <p>A long story short – studies, work, volunteering and values</p>
     <nav>
