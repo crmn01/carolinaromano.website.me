@@ -1,103 +1,166 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <title>Your Website Title</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    </head>
+<head>
+    <title>Carolina Romano</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Customizations */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: navy;
+            color: lightgreen;
+        }
 
-    <body class="is-preload">
+        /* Sidebar menu */
+        #header {
+            background-color: #000080; /* navy-blue sidebar */
+            width: calc(250px - 3cm); /* reduce width */
+        }
+        #header nav ul li a {
+            color: lightgreen;
+        }
+        #header nav ul li a.active {
+            color: #00FF00; /* brighter green for active */
+        }
+        #header header p, #header header h1 {
+            color: lightgreen;
+        }
 
-        <!-- Header (left sidebar) -->
-        <section id="header">
-            <header>
-                <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-                <h1 id="logo">A long story short</h1>
-                <p>Welcome to my personal story, work, and projects.</p>
-            </header>
-            <nav id="nav">
+        /* Content spacing */
+        #main {
+            margin-left: calc(250px - 3cm + 2rem);
+            padding: 2rem;
+        }
+
+        /* Footer customization */
+        #footer p, #footer a {
+            color: lightgreen;
+            text-align: center;
+        }
+
+        /* Social icons */
+        .social-icons {
+            margin-top: 0.5rem;
+        }
+        .social-icons a {
+            color: lightgreen;
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        /* Fullpage section styling */
+        section {
+            min-height: 100vh;
+            scroll-snap-align: start;
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-snap-type: y mandatory;
+        }
+    </style>
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="is-preload">
+
+    <!-- Header (left sidebar) -->
+    <section id="header">
+        <header>
+            <span class="image avatar"><img src="images/avatar.jpg" alt="Carolina Romano" /></span>
+            <h1 id="logo">Carolina Romano</h1>
+            <p>A long story short – studies, work, volunteering and values</p>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="#intro" class="active">The “talk me about yourself” question</a></li>
+                <li><a href="#language">Studies</a></li>
+                <li><a href="#europe">First work experience</a></li>
+                <li><a href="#privacy">The Shift</a></li>
+                <li><a href="#mission">Inclusive Neurotech</a></li>
+                <li><a href="#today">Today and Tomorrow</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+
+            <section id="intro">
+                <h2>The “talk me about yourself” question</h2>
+                <p>Where to start? What to highlight? Well, let me walk you through my academic, professional and volunteering story first – so that you can decide what to deepen after.</p>
+                <p>We always communicate something – it can be about any topic, anytime. In my case, I decided to communicate for a living, and here I am: writing and speaking about privacy, AI, data governance, neurotechnology and psychology through the lenses of culture and diversity. My goal is to contribute shaping the future of brain health technology in a more inclusive and culturally/socially relevant way.</p>
+            </section>
+
+            <section id="language">
+                <h2>Studies</h2>
+                <p>I studied foreign languages (apart from English and Italian, I speak German, Spanish and Portuguese; French is on the way!), and international communication across Italy, Germany and Norway. My focus was marketing – including PR and advertising – and how people from different languages, places and cultures understand them.</p>
+                <p>A new product that needs to be adapted to different European or international markets? No problem – I got an analysis and strategy ready for this.</p>
+            </section>
+
+            <section id="europe">
+                <h2>First work experience</h2>
+                <p>My first professional steps were rooted in digital communication and customer engagement. At fitvia in Wiesbaden, I gained hands-on experience in CRM, social media, communication and customer support – I could experience how targeted content and tailored interactions can shape user experiences across markets.</p>
+                <p>A few months after, a small jump to Stuttgart led me to STARTUP AUTOBAHN – time to work for a global, open innovation platform. There, I challenged myself in online/onsite event planning, communication strategy, PR, copywriting and community management, coordinating international startup–corporate collaborations.</p>
+            </section>
+
+            <section id="privacy">
+                <h2>The Shift</h2>
+                <p>AI, emerging technologies and data governance – was this the direction I wanted to take? Indeed it was. With a one-way ticket to Brussels, I joined the International Association Privacy Professionals, where I expanded my expertise in digital content creation, creative marketing and copywriting, event and customer support.</p>
+            </section>
+
+            <section id="mission">
+                <h2>Inclusive Neurotech</h2>
+                <p>A piece of the puzzle was still missing. I was working in an interesting field, but the desire for impact and advocacy for which Brussels is known was still pushing me. I found a partial answer in some volunteering – which led me to more specialization.</p>
+                <p>In the past two years, I found brain health and neurotechnology to be my go to. I combined courses on neuroscience, digital health data management and mental conditions with volunteering in the assistive technologies field and neurodiversity – eureka! That was my call: how can neurotechnologies, digital tools and AI support mental well being respecting ethics, autonomy and cognitive liberty?</p>
+            </section>
+
+            <section id="today">
+                <h2>Today and Tomorrow</h2>
+                <p>Today, I am building a career at the intersection of:</p>
                 <ul>
-                    <li><a href="#intro" class="active">Introduction</a></li>
-                    <li><a href="#language">Languages & Culture</a></li>
-                    <li><a href="#europe">First European Experiences</a></li>
-                    <li><a href="#privacy">Privacy & AI Governance</a></li>
-                    <li><a href="#mission">Deepening My Mission</a></li>
-                    <li><a href="#today">Today & Tomorrow</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li>Marketing and communication</li>
+                    <li>Privacy, AI governance and data management</li>
+                    <li>Brain health, neuroscience and psychology</li>
                 </ul>
-            </nav>
-        </section>
+                <p>For my career, I wish to grow into international project management, to lead impactful marketing and communication projects in the field of brain health technologies, combining creativity with ethical governance and scientific insight.</p>
+            </section>
 
-        <!-- Wrapper -->
-        <div id="wrapper">
-
-            <!-- Main -->
-            <div id="main">
-
-                <section id="intro">
-                    <h2>The “talk me about yourself” question</h2>
-                    <p>Where to start? What to highlight? Well, let me walk you through my academic, professional and volunteering story first – so that you can decide what to deepen after.</p>
-                    <p>We always communicate something – it can be about any topic, anytime. In my case, I decided to communicate for a living, and here I am: writing and speaking about privacy, AI, data governance, neurotechnology and psychology through the lenses of culture and diversity. My goal is to contribute shaping the future of brain health technology in a more inclusive and culturally/socially relevant way.</p>
-                </section>
-
-                <section id="language">
-                    <h2>Where it all begun: Languages, Culture and Marketing</h2>
-                    <p>I studied foreign languages (apart from English and Italian, I speak German, Spanish and Portuguese; French is on the way!), and international communication across Italy, Germany and Norway. My focus was marketing – including PR and advertising – and how people from different languages, places and cultures understand them.</p>
-                    <p>A new product that needs to be adapted to different European or international markets? No problem – I got an analysis and strategy ready for this.</p>
-                </section>
-
-                <section id="europe">
-                    <h2>Getting started – first experiences across Europe</h2>
-                    <p>My first professional steps were rooted in digital communication and customer engagement. At fitvia in Wiesbaden, I gained hands-on experience in CRM, social media, communication and customer support – I could experience how targeted content and tailored interactions can shape user experiences across markets.</p>
-                    <p>A few months after, a small jump to Stuttgart led me to STARTUP AUTOBAHN – time to work for a global, open innovation platform. There, I challenged myself in online/onsite event planning, communication strategy, PR, copywriting and community management, coordinating international startup–corporate collaborations.</p>
-                </section>
-
-                <section id="privacy">
-                    <h2>Entering the world of Privacy, AI and Data Governance</h2>
-                    <p>AI, emerging technologies and data governance – was this the direction I wanted to take? Indeed it was. With a one-way ticket to Brussels, I joined the International Association Privacy Professionals, where I expanded my expertise in digital content creation, creative marketing and copywriting, event and customer support.</p>
-                </section>
-
-                <section id="mission">
-                    <h2>Deepening my mission: balancing expertise and personal values</h2>
-                    <p>A piece of the puzzle was still missing. I was working in an interesting field, but the desire for impact and advocacy for which Brussels is known was still pushing me. I found a partial answer in some volunteering – which led me to more specialization.</p>
-                    <p>In the past two years, I found brain health and neurotechnology to be my go to. I combined courses on neuroscience, digital health data management and mental conditions with volunteering in the assistive technologies field and neurodiversity – eureka!</p>
-                </section>
-
-                <section id="today">
-                    <h2>Today and Tomorrow</h2>
-                    <p>Today, I am building a career at the intersection of:</p>
-                    <ul>
-                        <li>Marketing and communication</li>
-                        <li>Privacy, AI governance and data management</li>
-                        <li>Brain health, neuroscience and psychology</li>
-                    </ul>
-                    <p>For my career, I wish to grow into international project management, to lead impactful marketing and communication projects in the field of brain health technologies.</p>
-                </section>
-
-                <section id="projects">
-                    <h2>We are at the end, and I still haven’t seen any project!</h2>
-                    <p>I got you – visit the other section of the website <a href="projects.html">Projects and Portfolio</a>, it is all there.</p>
-                </section>
-
-            </div>
-
-            <!-- Footer -->
-            <section id="footer">
-                <p>&copy; 2025 Your Name</p>
+            <section id="projects">
+                <h2>We are at the end, and I still haven’t seen any project!</h2>
+                <p>I got you – visit the other section of the website <a href="projects.html" style="color: lightgreen;">Projects and Portfolio</a>, it is all there.</p>
             </section>
 
         </div>
 
-        <!-- Scripts required for the template -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+        <!-- Footer -->
+        <section id="footer">
+            <p>&copy; 2025 Carolina Romano</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/carolina-romano20230/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:carolina01romano@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
 
-    </body>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>
